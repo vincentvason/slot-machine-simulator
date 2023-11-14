@@ -81,7 +81,7 @@ int main()
 
     for(int i = 0; i < 10; i++)
     {
-        std::cout << symbol[i] << " Triggered: \t" << static_cast<float>(win[i])/spins << std::endl;
+        std::cout << symbol[i] << " Triggered: \t" << static_cast<float>(win[i])/spins << "( " << win[i] << ")"<< std::endl;
     }    
 
     std::cout << "Spins /wo Free Game: \t" << spins - free_spin_wins << std::endl;
@@ -100,6 +100,7 @@ int main()
     }
 
     float rtp_free_spin = (rtp_no_free_spin * 5 * (retrigger_chance));
+    std::cout << "Retrigger Chance: \t" << retrigger_chance << std::endl;
     std::cout << "Free Game Play: \t" << free_spin_wins << std::endl;
     std::cout << "RTP on Free Game: \t" << rtp_free_spin << std::endl;
 

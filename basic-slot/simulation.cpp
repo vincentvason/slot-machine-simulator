@@ -110,5 +110,5 @@ float simulation()
         ++spins;
     }
 
-    return credits_wins/(spins - free_spin_played);
+    return credits_wins/1000000;
 }
